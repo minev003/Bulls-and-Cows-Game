@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+    <script src="logic.js"></script>
+    <h1>Bulls and cows</h1>
+    <h2>Game<h2>
+<div class="container">
+    <p>Bulls = correct number, correct position</br>
+     Cows = coreect number, wrong position</p>
+</div>
+
+</br>
+    <div class="container">
+        <p>GUESS THE NUMBER!S</p>
+    </div>
+</br>
+    <input type="number" name="number" placeholder="" id="try" onkeyup="removeDoubleNumber();">
+     <button name="submit" onclick="check()">Submit</button>
+       <div class="result">
+                Bulls
+                /
+                Cows
+            <p class="Bulls" >Bulls:</p>
+            <p class="Cows"> Cows:</p>
+      </div>
+</body>
+</html>
